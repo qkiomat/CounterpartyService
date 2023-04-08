@@ -1,6 +1,11 @@
-﻿namespace CounterpartyService
+﻿using CounterpartyService.Repositories.Entities;
+using Microsoft.EntityFrameworkCore;
+
+namespace CounterpartyService
 {
-    public class ApplicationBbContext
+    public class ApplicationBbContext : DbContext
     {
+        public DbSet<CounterpartyEntity> Counterparty { get; set; }
+
     }
 }
