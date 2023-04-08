@@ -7,5 +7,10 @@ namespace CounterpartyService
     {
         public DbSet<CounterpartyEntity> Counterparty { get; set; }
 
+        public ApplicationBbContext(DbContextOptions<ApplicationBbContext> dbContextOptions)
+            : base(dbContextOptions)
+        {
+
+        }
     }
 }

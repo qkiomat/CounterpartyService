@@ -6,8 +6,8 @@
         public string Name { get; set; }
         public string Description { get; set; }
         public string Type { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        //public DateTime CreatedDate { get; set; } 
+        //public DateTime UpdatedDate { get; set; }
         public string IPNCode { get; set; }
         public string IBAN { get; set; }
         public string Address { get; set; } = string.Empty;

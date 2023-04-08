@@ -19,7 +19,7 @@ namespace CounterpartyService.Repositories
                 Name = name,
                 Description = name,
                 Type = "",
-                CreatedDate = DateTime.Now,
+                //CreatedDate = DateTime.Now,
                 IPNCode = ipn,
                 IBAN = iban,
                 Address = address,
