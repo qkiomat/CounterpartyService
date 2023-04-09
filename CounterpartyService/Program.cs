@@ -15,6 +15,7 @@ namespace CounterpartyService
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddScoped<ICounterpartyRepository, CounterpartyRepository>();
+            builder.Services.AddScoped<IContractRepository, ContractRepository>();
 
             var connectionString = $"Host=localhost;Port=5432;Username=admin;Password=admin;Database=counterparty-service-database";
             builder.Services.AddDbContext<ApplicationBbContext>(options =>
