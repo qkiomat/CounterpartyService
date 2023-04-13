@@ -1,8 +1,8 @@
-﻿using CounterpartyService.Repositories.Entities;
-using CounterpartyService.Repositories.Interfaces;
+﻿using Counterparty_Service.Repositories.Entities;
+using Counterparty_Service.Repositories.Interfaces;
 using System.Net;
 
-namespace CounterpartyService.Repositories
+namespace Counterparty_Service.Repositories
 {
     public class ContractRepository : IContractRepository
     {
@@ -15,6 +15,7 @@ namespace CounterpartyService.Repositories
         {
             var contract = new ContractEntity
             {
+                CounterpartyId = counterpartyId,
                 Name = name,
                 Type = "",
                 StartDate = startDate,

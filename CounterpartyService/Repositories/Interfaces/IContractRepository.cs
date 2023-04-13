@@ -1,6 +1,6 @@
-﻿using CounterpartyService.Repositories.Entities;
+﻿using Counterparty_Service.Repositories.Entities;
 
-namespace CounterpartyService.Repositories.Interfaces
+namespace Counterparty_Service.Repositories.Interfaces
 {
     public interface IContractRepository
     {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CounterpartyService", "CounterpartyService\CounterpartyService.csproj", "{B9CE166B-678D-4D86-9ADA-D3449AC96912}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Counterparty_Service", "CounterpartyService\Counterparty_Service.csproj", "{B9CE166B-678D-4D86-9ADA-D3449AC96912}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

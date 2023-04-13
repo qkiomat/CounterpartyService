@@ -1,8 +1,10 @@
-using CounterpartyService.Repositories;
-using CounterpartyService.Repositories.Interfaces;
+using Counterparty_Service.Repositories;
+using Counterparty_Service.Repositories.Interfaces;
+using Counterparty_Service.Services.Interfaces;
+using Counterparty_Service.Services;
 using Microsoft.EntityFrameworkCore;
 
-namespace CounterpartyService
+namespace Counterparty_Service
 {
     public class Program
     {
@@ -14,7 +16,10 @@ namespace CounterpartyService
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddScoped<ICounterpartyService, CounterpartyService>();
             builder.Services.AddScoped<ICounterpartyRepository, CounterpartyRepository>();
+
+            builder.Services.AddScoped<IContractService, ContractService>();
             builder.Services.AddScoped<IContractRepository, ContractRepository>();
 
             var connectionString = $"Host=localhost;Port=5432;Username=admin;Password=admin;Database=counterparty-service-database";

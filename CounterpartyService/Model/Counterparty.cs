@@ -1,4 +1,6 @@
-﻿namespace CounterpartyService.Model
+﻿using Counterparty_Service.Repositories.Entities;
+
+namespace Counterparty_Service.Model
 {
     public class Counterparty
     {
@@ -12,5 +14,6 @@
         public string Address { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public string PhoneNumber { get; set; } = string.Empty;
+        //public List<Contract>? Contracts { get; set; }
     }
 }

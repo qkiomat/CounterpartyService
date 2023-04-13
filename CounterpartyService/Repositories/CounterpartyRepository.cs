@@ -1,8 +1,8 @@
-﻿using CounterpartyService.Repositories.Entities;
-using CounterpartyService.Repositories.Interfaces;
+﻿using Counterparty_Service.Repositories.Entities;
+using Counterparty_Service.Repositories.Interfaces;
 using System.Reflection.Emit;
 
-namespace CounterpartyService.Repositories
+namespace Counterparty_Service.Repositories
 {
     public class CounterpartyRepository : ICounterpartyRepository
     {
